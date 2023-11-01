@@ -15,7 +15,7 @@ app.use("/employee", employeeRouter)
 app.use("/employee/auth", authRouter)
 
 mongoose
-    .connect(process.env.urlMongoDev)
+    .connect(process.env.urlMongo)
     .then(() => {
         app.listen(process.env.PORT, () => {
             console.log(`Server listen on port ${process.env.PORT}`);
