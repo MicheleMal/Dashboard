@@ -1,0 +1,12 @@
+.example-card {
+  max-width: 400px;
+  margin: 15px;
+  border-radius: 10px;
+  background-color: #282A3A;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Fa passare le card su una nuova riga quando lo spazio termina */
+  gap: 10px;
+}

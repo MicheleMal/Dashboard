@@ -1,0 +1,70 @@
+<form
+  class="form"
+  autocomplete="off"
+  #registerForm="ngForm"
+  (ngSubmit)="onSubmit()"
+>
+  <mat-form-field class="mat-form-field">
+    <mat-label>Name</mat-label>
+    <input
+      type="text"
+      placeholder="Mario"
+      name="name"
+      matInput
+      ngModel
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field class="mat-form-field">
+    <mat-label>Surname</mat-label>
+    <input
+      type="text"
+      placeholder="Rossi"
+      name="surname"
+      matInput
+      ngModel
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field class="mat-form-field">
+    <mat-label>Email</mat-label>
+    <input
+      type="email"
+      placeholder="example@gmail.com"
+      name="email"
+      matInput
+      ngModel
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field class="mat-form-field">
+    <mat-label>Password</mat-label>
+    <input type="password" name="password" matInput ngModel required />
+  </mat-form-field>
+
+  <mat-form-field class="mat-form-field">
+    <mat-label>Salary</mat-label>
+    <input
+      type="number"
+      min="600"
+      name="salary"
+      matInput
+      ngModel
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field class="mat-form-field">
+    <mat-label>Date birth</mat-label>
+    <input type="date" name="dateBirth" matInput ngModel required />
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" [disabled]="!registerForm.valid">
+    Sign up
+  </button>
+</form>
+
+<span matSnackBarActions class="snack-bar"></span>

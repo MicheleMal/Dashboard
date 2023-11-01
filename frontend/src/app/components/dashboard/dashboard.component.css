@@ -1,0 +1,20 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.active{
+  background-color: #797979;
+}
+
+.list-item:hover{
+  background-color: #464545;
+}

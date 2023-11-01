@@ -1,0 +1,17 @@
+<form class="form" autocomplete="off" #loginForm="ngForm" (ngSubmit)="onSubmit()">
+  <mat-form-field class="mat-form-field">
+    <mat-label>Email</mat-label>
+    <input type="email" placeholder="example@gmail.com" name="email" matInput ngModel required/>
+  </mat-form-field>
+
+  <mat-form-field class="mat-form-field">
+    <mat-label>Password</mat-label>
+    <input type="password" name="password" matInput ngModel required/>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" [disabled]="!loginForm.valid">
+    Sign in
+  </button>
+</form>
+
+<span matSnackBarActions class="snack-bar"></span>

@@ -1,0 +1,20 @@
+.form {
+  margin: 10px;
+}
+
+.mat-form-field {
+  margin-right: 20px;
+}
+
+button{
+  color: #000000 !important;
+  background-color: #C69749 !important;
+}
+
+button:hover{
+  background-color: #eb9b1c !important;
+}
+
+button:disabled{
+  background-color: #CCCCCC !important;
+}
