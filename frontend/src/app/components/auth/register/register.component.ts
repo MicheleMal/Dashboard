@@ -67,4 +67,8 @@ export class RegisterComponent implements OnInit {
         }
       );
   }
+
+  onClickLink(){
+    this.router.navigate(["/signin"])
+  }
 }

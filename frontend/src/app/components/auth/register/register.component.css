@@ -18,3 +18,9 @@ button:hover {
 button:disabled {
   background-color: #cccccc !important;
 }
+
+.link{
+  color: #9494ff;
+  text-decoration: underline;
+  cursor: pointer;
+}

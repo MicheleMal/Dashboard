@@ -12,6 +12,8 @@
   <button mat-raised-button type="submit" [disabled]="!loginForm.valid">
     Sign in
   </button>
+
+  <p style="color: white;">Non hai un account, <a class="link" (click)="onClickLink()">clicca qui per creare un nuovo account.</a></p>
 </form>
 
 <span matSnackBarActions class="snack-bar"></span>
